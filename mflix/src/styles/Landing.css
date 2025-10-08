@@ -1,0 +1,37 @@
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #111;
+  color: white;
+}
+
+.landing-title {
+  font-size: 38px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 500;
+  color: #e5e5e5;
+}
+
+.profiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .landing-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .profiles-container {
+    gap: 20px;
+  }
+}

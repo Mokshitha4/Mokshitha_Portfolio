@@ -1,0 +1,130 @@
+.homepage {
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+}
+
+.homepage-rows {
+  padding: 0 0 40px 0;
+  margin-top: -80px; /* Overlap with hero gradient for better transition */
+  position: relative;
+  z-index: 4;
+}
+
+.profile-selector-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, rgba(20,20,20,0), rgba(20,20,20,1), rgba(20,20,20,0));
+  margin: 20px 0;
+}
+
+.profile-selector-section h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  color: #e5e5e5;
+}
+
+.profile-selector-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-selector-btn:hover {
+  background-color: #f40612;
+}
+
+.netflix-footer {
+  background-color: #141414;
+  color: #808080;
+  padding: 50px 20px;
+  border-top: 2px solid #333;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  color: #e50914;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #808080;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #e5e5e5;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.social-links a {
+  color: #808080;
+  font-size: 24px;
+  transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #e5e5e5;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .profile-selector-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-selector-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+  .footer-links {
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    font-size: 14px;
+  }
+  
+  .social-links a {
+    font-size: 20px;
+  }
+}

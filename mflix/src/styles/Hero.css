@@ -1,0 +1,164 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* Main hero is taller */
+.hero-section.main-hero {
+  height: 85vh;
+  min-height: 550px;
+}
+
+/* Profile hero is shorter */
+.hero-section.profile-hero {
+  height: 60vh;
+  min-height: 350px;
+}
+
+.hero-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center 30%;
+  z-index: 1;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0.2) 0%,
+    rgba(20, 20, 20, 0.5) 50%,
+    rgba(20, 20, 20, 0.8) 75%,
+    rgba(20, 20, 20, 1) 100%
+  );
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  padding: 0 60px;
+  padding-top: 70px; /* To account for the fixed header */
+}
+
+.hero-text {
+  max-width: 600px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-tagline {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #e50914;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3; /* Added for compatibility */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.hero-btn.primary {
+  background-color: #e50914;
+  color: white;
+}
+
+.hero-btn.primary:hover {
+  background-color: #f40612;
+}
+
+.hero-btn.secondary {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.hero-btn.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-genre {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #e5e5e5;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+  }
+  
+  .hero-content {
+    padding: 0 20px;
+  }
+  
+  .hero-title {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

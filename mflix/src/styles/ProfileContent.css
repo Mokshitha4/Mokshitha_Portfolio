@@ -1,0 +1,82 @@
+.profile-content {
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+}
+
+.content-container {
+  padding-top: 30px; /* Reduced space since we have Hero at the top */
+}
+
+.profile-banner {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 60px;
+  position: relative;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.profile-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 1));
+  z-index: 1;
+}
+
+.profile-banner h1, .profile-banner p {
+  position: relative;
+  z-index: 2;
+}
+
+.profile-banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profile-banner p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.work-banner {
+  background-image: url('https://i.imgur.com/dYcYQ7E.jpg'); /* Placeholder image */
+}
+
+.projects-banner {
+  background-image: url('https://i.imgur.com/pTZ2dbc.jpg'); /* Placeholder image */
+}
+
+.hackathons-banner {
+  background-image: url('https://i.imgur.com/0OKJbsI.jpg'); /* Placeholder image */
+}
+
+.personal-banner {
+  background-image: url('https://i.imgur.com/v9Whn3t.jpg'); /* Placeholder image */
+}
+
+@media (max-width: 768px) {
+  .profile-banner {
+    height: 300px;
+    padding: 0 20px;
+  }
+  
+  .profile-banner h1 {
+    font-size: 32px;
+  }
+  
+  .profile-banner p {
+    font-size: 16px;
+  }
+}
